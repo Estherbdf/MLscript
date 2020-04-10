@@ -27,6 +27,7 @@ def file2matrix(filename):
         listFromLine = line.split('\t')
         # 每列的属性数据
         returnMat[index, :] = listFromLine[0:3]
+
         # 每列的类别数据，就是 label 标签数据
         classLabelVector.append(int(listFromLine[-1]))
         index += 1
